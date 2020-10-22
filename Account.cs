@@ -9,22 +9,22 @@ namespace BankOfDotNet
             protected Guid accountId;
             protected double balance;
 
-        protected Account(double initialBalance);
+        protected Account(double initialBalance)
         {
-            AccountId = Guid.newGuid();
+            AccountId = Guid.NewGuid();
             Balance = initialBalance;
         }
 
         public Guid AccountId
         {
             get { return accountId; }
-            set { accountId = value; }
+            protected set { accountId = value; }
         }
 
         public double Balance
         {
             get { return balance; }
-            set { balance = value; }
+            protected set { balance = value; }
         }
 
         public virtual void Deposit(double amount)
@@ -38,8 +38,13 @@ namespace BankOfDotNet
             {
                 balance -= amount;
             }
+            else
+            {
+                throw new BankofDotNet.OverdraftException("Insufficient Funds", amount - balance);
+            }
         }
 
         public abstract void Display();
     }
+
 }
