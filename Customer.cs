@@ -49,6 +49,10 @@ namespace BankofDotNet
             {
                 accounts.Add(account);
             }
+            else
+            {
+                throw new AccountLimitException("Maximum number of accounts reached", accounts.Count);
+            }
         }
 
         public List<BankOfDotNet.Account> GetAccounts()
@@ -72,7 +76,3 @@ namespace BankofDotNet
 
 
     }
-}
-
-
-}
