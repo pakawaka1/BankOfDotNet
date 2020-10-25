@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace BankofDotNet
+namespace BankOfDotNet
 {
     public class AccountLimitException : Exception
     {
-        private int numOfAccounts;
+        public int numOfAccounts;
 
         public AccountLimitException(string message, int numOfAccounts) : base(message)
         {

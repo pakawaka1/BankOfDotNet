@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BankOfDotNet
 {
@@ -40,7 +38,7 @@ namespace BankOfDotNet
             }
             else
             {
-                throw new BankofDotNet.OverdraftException("Insufficient Funds", amount - balance);
+                throw new OverdraftException("Insufficient Funds", amount - balance);
             }
         }
 

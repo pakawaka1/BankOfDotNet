@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BankofDotNet
+namespace BankOfDotNet
 {
-    public class CheckingAccount : BankOfDotNet.Account
+    public class CheckingAccount : Account
     {
         private double overdraftBalance;
 

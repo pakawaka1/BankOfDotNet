@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace BankofDotNet
+namespace BankOfDotNet
 {
     public class Customer
     {
@@ -10,14 +9,14 @@ namespace BankofDotNet
         private Guid customerId;
         private string firstName;
         private string lastName;
-        private List<BankOfDotNet.Account> accounts;
+        private List<Account> accounts;
 
-        private Customer(string firstName, string lastName)
+        public Customer(string firstName, string lastName)
         {
             customerId = Guid.NewGuid();
             FirstName = firstName;
             LastName = lastName;
-            accounts = new List<BankOfDotNet.Account>(MAXACCOUNTS);
+            accounts = new List<Account>(MAXACCOUNTS);
         }
 
         public Guid CustomerId
@@ -43,7 +42,7 @@ namespace BankofDotNet
             get { return accounts.Count; }
         }
 
-        public void AddAccount(BankOfDotNet.Account account)
+        public void AddAccount(Account account)
         {
             if (accounts.Count < MAXACCOUNTS)
             {
@@ -55,14 +54,14 @@ namespace BankofDotNet
             }
         }
 
-        public List<BankOfDotNet.Account> GetAccounts()
+        public List<Account> GetAccounts()
         {
             return accounts;
         }
 
         public ITransferable GetFirstTransferableAccount()
         {
-            foreach(BankOfDotNet.Account account in accounts)
+            foreach(Account account in accounts)
             {
                 if(account is ITransferable a)
                 {

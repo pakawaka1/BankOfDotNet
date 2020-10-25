@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using BankOfDotNet;
 
-namespace BankofDotNet
+namespace BankOfDotNet
 {
     public class SavingsAccount : Account
     {
-        private double interestRate;
+        public double interestRate;
 
         public SavingsAccount(double initialBalance, double interestRate) : base(initialBalance) 
         {
@@ -21,7 +18,7 @@ namespace BankofDotNet
             Console.WriteLine($"Savings Accont Overdraft Balance: {interestRate}");
         }
 
-        public void Transfer(Account to, double amount)
+        public void Transfer(SavingsAccount to, double amount)
         {
             this.Withdraw(amount);
             to.Deposit(amount); 

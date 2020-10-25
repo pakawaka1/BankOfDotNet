@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BankofDotNet
+﻿namespace BankOfDotNet
 {
     public interface ITransferable
     {
-        void Transfer(BankOfDotNet.Account to, double Amount);
+        void Transfer(Account to, double Amount);
     }
 }
