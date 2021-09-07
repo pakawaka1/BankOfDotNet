@@ -1,4 +1,3 @@
-![Screen Shot 2021-09-07 at 4 50 28 PM](https://user-images.githubusercontent.com/29390297/132424272-a86ba27e-4dec-48b7-9082-bcf368d34311.png)
 # BankOfDotNet
 A basic banking accounts app for customers.
 
