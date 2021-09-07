@@ -1,3 +1,4 @@
+![Screen Shot 2021-09-07 at 4 50 28 PM](https://user-images.githubusercontent.com/29390297/132424272-a86ba27e-4dec-48b7-9082-bcf368d34311.png)
 # BankOfDotNet
 A basic banking accounts app for customers.
 
@@ -28,6 +29,10 @@ A basic banking accounts app for customers.
   
   ![Screen Shot 2021-09-07 at 4 28 44 PM](https://user-images.githubusercontent.com/29390297/132422895-5c556883-ac9a-458f-86d2-504b52682642.png)
   
-  -  Click on Program.cs, add a breakpoint, and using the debugger, step through each line to see the results.
+  -  Click on Program.cs, add a breakpoint and click play:
+
+  ![Screen Shot 2021-09-07 at 4 50 28 PM](https://user-images.githubusercontent.com/29390297/132424282-61a48b5f-ad71-4abb-8e59-3fc423d321e8.png)
   
-  ![Screen Shot 2021-09-07 at 4 27 33 PM](https://user-images.githubusercontent.com/29390297/132423927-2fecfdb8-5d43-4689-9cf0-c86dcaa7c23c.png)
+  -  Now, using the debugger, step through each line to see the results:
+
+  ![Screen Shot 2021-09-07 at 4 50 49 PM](https://user-images.githubusercontent.com/29390297/132424369-a05f8594-0d6a-402b-a23d-99b50fd7c429.png)
