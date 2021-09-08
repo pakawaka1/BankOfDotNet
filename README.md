@@ -1,5 +1,5 @@
 # BankOfDotNet
-A basic banking accounts app for customers.
+A banking application for checking and savings accounts.
 
 ## How to Get Started
 
